@@ -8,6 +8,7 @@ import { ContentComponent } from './sections/content/content.component';
 import { FooterComponent } from './sections/footer/footer.component';
 import { NavMenuComponent } from './sections/header/nav-menu/nav-menu.component';
 import {HeaderComponent} from './sections/header/header.component';
+import { RequestQuoteComponent } from './sections/banner/request-quote/request-quote.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {HeaderComponent} from './sections/header/header.component';
     ContentComponent,
     FooterComponent,
     NavMenuComponent,
-    HeaderComponent
+    HeaderComponent,
+    RequestQuoteComponent
   ],
   imports: [
     BrowserModule,

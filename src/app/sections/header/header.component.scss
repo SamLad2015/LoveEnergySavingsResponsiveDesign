@@ -1,0 +1,15 @@
+@import "../../../variables";
+.header {
+  padding-bottom: 20px;
+  .lse-logo {
+    padding: 14px 14px 0 0;
+  }
+  .header-telephone {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: $color-green;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+}

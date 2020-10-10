@@ -1,6 +1,6 @@
 <div class="water-suppliers">
   <div class="container">
-    <div class="row">
+    <div class="row suppliers-list">
       <div class="col-4">
         <h4 class="heading">Water Supplier</h4>
       </div>
@@ -10,6 +10,42 @@
       <div class="col-4">
         <h4 class="heading">Water Comparison</h4>
       </div>
+    </div>
+    <div class="row" *ngFor="let s of waterSuppliers">
+      <div class="col-4 image-container">
+        <img src="assets/{{s.logo}}" title="{{s.logo}}"  alt="{{s.logo}}"/>
+      </div>
+      <div class="col-4">
+        <p>{{s.description}}</p>
+      </div>
+      <div class="col-4 link-container">
+        <a href="#" class="text-danger" title="Request a quote">Request a quote</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-all-button-row">
+    <button class="btn-dark show-all-button" title="Show all suppliers">
+      <span class="show-all-button-text">Show all suppliers</span><span class="expand">+</span>
+    </button>
+  </div>
+  <div class="row companies-logos">
+    <div class="col-2">
+      <img src="assets/source-for-business.png" alt="Source for Business Logo" title="Source for business" />
+    </div>
+    <div class="col-2">
+      <img src="assets/ses-water.png" alt="Ses Water Logo" title="Ses Water" />
+    </div>
+    <div class="col-2">
+      <img src="assets/water-plus.png" alt="Water Plus Logo" title="Water Plus" />
+    </div>
+    <div class="col-2">
+      <img src="assets/aimera.png" alt="Aimera Logo" title="Aimera" />
+    </div>
+    <div class="col-2">
+      <img src="assets/first-business-water.png" alt="First business water Logo" title="First business water" />
+    </div>
+    <div class="col-2">
+      <img src="assets/castle-water-medium-size-logo.png" alt="Castle Water Logo" title="Castle Water" />
     </div>
   </div>
 </div>

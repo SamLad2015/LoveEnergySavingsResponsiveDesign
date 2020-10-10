@@ -12,6 +12,7 @@ import { RequestQuoteComponent } from './sections/banner/request-quote/request-q
 import {ReactiveFormsModule} from '@angular/forms';
 import { SwitchReasonsComponent } from './sections/content/switch-reasons/switch-reasons.component';
 import { WaterSuppliersComponent } from './sections/content/water-suppliers/water-suppliers.component';
+import { OtherReasonsTabsComponent } from './sections/content/other-reasons-tabs/other-reasons-tabs.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { WaterSuppliersComponent } from './sections/content/water-suppliers/wate
     HeaderComponent,
     RequestQuoteComponent,
     SwitchReasonsComponent,
-    WaterSuppliersComponent
+    WaterSuppliersComponent,
+    OtherReasonsTabsComponent
   ],
   imports: [
     BrowserModule,

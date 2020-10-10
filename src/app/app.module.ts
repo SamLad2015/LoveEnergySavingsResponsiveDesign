@@ -9,6 +9,7 @@ import { FooterComponent } from './sections/footer/footer.component';
 import { NavMenuComponent } from './sections/header/nav-menu/nav-menu.component';
 import {HeaderComponent} from './sections/header/header.component';
 import { RequestQuoteComponent } from './sections/banner/request-quote/request-quote.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RequestQuoteComponent } from './sections/banner/request-quote/request-q
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

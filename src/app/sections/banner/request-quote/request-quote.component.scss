@@ -1,4 +1,44 @@
 @import "../../../../variables";
 .request-quote {
+  padding: 0 25px 20px 25px;
   background-color: $color-dark-blue;
+  h3 {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 1.6em;
+    margin-top: 30px;
+  }
+  .form-group {
+    margin: 0;
+    .form-control {
+      background: transparent;
+      border: 0;
+      margin: 7px 0;
+      height: auto;
+
+      input, button {
+        width: 100%;
+        line-height: 2em;
+        border-radius: 2px;
+        border-color: transparent;
+        padding: 7px;
+      }
+
+      button {
+        margin-top: 10px;
+        font-weight: bolder;
+      }
+
+      .disclaimer {
+        font-size: 0.65em;
+        line-height: 1.5em;
+        color: #ffffff;
+        margin-top: 10px;
+        a {
+          color: #ffffff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

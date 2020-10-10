@@ -1,3 +1,28 @@
 <div class="request-quote">
-
+  <div class="form-group">
+    <div class="row">
+      <div class="col" [formGroup]="requestFormGroup">
+        <div class="form-control">
+          <h3>Request a quote</h3>
+        </div>
+        <div class="form-control">
+          <label for="name"></label>
+          <input id="name" type="text" formControlName="name" placeholder="Name*" />
+        </div>
+        <div class="form-control">
+          <label for="phone"></label>
+          <input id="phone" type="text" formControlName="phone" placeholder="Phone Number*" />
+        </div>
+        <div class="form-control">
+          <label for="email"></label>
+          <input id="email" type="text" formControlName="email" placeholder="Email Address*" />
+        </div>
+        <div class="form-control">
+          <button type="submit" class="btn-danger">SUBMIT</button>
+          <p class="disclaimer">By submitting your details, you are agreeing to Love Energy
+            Savings <a href="#" title="terms & conditions">terms & conditions</a>. For more information please visit our <a href="#" title="privacy policy">privacy policy</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

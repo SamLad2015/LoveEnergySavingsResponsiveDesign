@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-menu.component.scss']
 })
 export class NavMenuComponent implements OnInit {
-
+  navMenuList = ['Business Energy', 'Home Energy', 'Other Services', 'Content Hub', 'About Us'];
   constructor() { }
 
   ngOnInit(): void {

@@ -1,33 +1,41 @@
 @import "../../../variables";
 .banner {
   background: linear-gradient(#f9f9f9, #c8e2ec);
-  padding-bottom: 45px;
-  .contents {
-    padding-top: 50px;
-    .heading {
-      font-size: 1.8em;
-      font-weight: bold;
-      color: $color-blue;
-      max-width: 500px;
-      line-height: 1.2em;
-      margin-bottom: 14px;
+  .container {
+    .row {
+      .contents {
+        font-size: 1em;
+        padding: 45px 10px 10px 10px;
+        .heading {
+          font-size: 1.8em;
+          font-weight: bold;
+          color: $color-blue;
+          max-width: 500px;
+          line-height: 1.4em;
+          margin-bottom: 14px;
+        }
+        .description {
+          font-weight: bold;
+        }
+        .banner-logos {
+          margin-top: 30px;
+        }
+        div.content-row {
+          font-size: .925em;
+          line-height: 1.2em;
+          padding: 7px 0;
+          max-width: 680px;
+        }
+      }
+      .banner-text {
+        margin-bottom: 30px;
+      }
+      .love-water-savings-logo {
+        height: 80px;
+      }
+      .trustpilot-logo {
+        text-align: right;
+      }
     }
-    .description {
-      font-weight: bold;
-    }
-    div {
-      line-height: 1.2em;
-      padding: 7px 0;
-      max-width: 730px;
-    }
-  }
-  .banner-text {
-    margin-bottom: 30px;
-  }
-  .love-water-savings-logo {
-    height: 80px;
-  }
-  .trustpilot-logo {
-    text-align: right;
   }
 }

@@ -1,1 +1,61 @@
-<p>other-reasons-tabs works!</p>
+<div class="other-reasons-tabs">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 tab-name">
+        <div class="row" [class.selected]="selectedId==1" (click)="selectedId=1">
+          <div class="col">
+            <span>Enjoy cheaper water rates</span>
+          </div>
+        </div>
+        <div class="row" [class.selected]="selectedId==2" (click)="selectedId=2">
+          <div class="col">
+            <span>Consolidate your bills</span>
+          </div>
+        </div>
+        <div class="row" [class.selected]="selectedId==3" (click)="selectedId=3">
+          <div class="col">
+            <span>Get a free water audit</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 details">
+        <div class="row" [class.selected]="selectedId==1">
+          <div class="col">
+            <div>
+            <p>One of the reasons why businesses can now enjoy cheaper water rates is because you get to pay wholesale prices.</p>
+            <p>Since the water markets opened in Scotland, reports suggest that companies have enjoyed savings of up to 12% on their bills – so it makes sense to see how much you could save by switching water providers.</p>
+            <p>Not only can you reduce your business water bills, but switching your supplier will allow you to:</p>
+            <div>
+              <ul>
+                  <li>Become more water-efficient</li>
+                  <li>Request consolidated billing and electronic billing</li>
+                  <li>Receive a service that is tailored to suit your specific business needs</li>
+                  <li>Move your water supply to one supplier if you have sites in multiple regions</li>
+               </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" [class.selected]="selectedId==2">
+          <div class="col">
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+        </div>
+        <div class="row" [class.selected]="selectedId==3">
+          <div class="col">
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua:
+              <ul>
+                <li>Ut enim ad minim veniam</li>
+                <li>Quis nostrud exercitation ullamco laboris nisi ut</li>
+                <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

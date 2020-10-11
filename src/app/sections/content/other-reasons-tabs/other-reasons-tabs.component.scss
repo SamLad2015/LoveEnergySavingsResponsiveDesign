@@ -1,0 +1,65 @@
+@import "../../../../variables";
+.other-reasons-tabs {
+  .container {
+    .row {
+      .tab-name {
+        .row {
+          border-right: $color-sky-blue 2px solid;
+          cursor: pointer;
+          &:nth-of-type(2) {
+            padding: 2px 0;
+          }
+          .col {
+            border: $color-sky-blue 2px solid;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: $color-sky-blue;
+            span {
+              font-size: 1.2em;
+              color: #ffffff;
+              font-weight: bolder;
+            }
+          }
+          &.selected {
+            border-right: #ffffff;
+            cursor: default;
+            .col {
+              width: 101%;
+              background-color: #ffffff;
+              border-right: #ffffff;
+              span {
+                color: $color-sky-blue;
+              }
+            }
+          }
+        }
+      }
+      .details {
+        .row {
+          display: none;
+          .col {
+            border-right: $color-sky-blue 2px solid;
+            border-top: $color-sky-blue 2px solid;
+            border-bottom: $color-sky-blue 2px solid;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            height: 304px;
+            padding: 40px;
+            div {
+              font-size: 0.9em;
+              p {
+                margin-bottom: 10px;
+              }
+            }
+          }
+          &.selected {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

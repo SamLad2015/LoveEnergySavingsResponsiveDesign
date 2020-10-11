@@ -26,12 +26,23 @@
             font-weight: normal;
             color: $color-blue;
           }
+          .minus {
+            margin-right:-22.5px;
+            transform: rotate(90deg);
+          }
+          .expanded {
+            transform: rotate(0deg);
+            transition: all 0.5s ease;
+          }
         }
         div.details {
-          display: none;
+          height: 0;
+          opacity: 0;
           font-size: 0.875em;
           &.expanded {
-            display: block;
+            height: auto;
+            transition: all 0.5s;
+            opacity: 1;
             p {
               margin-bottom: 0;
               padding-bottom: 10px;

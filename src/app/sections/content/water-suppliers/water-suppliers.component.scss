@@ -74,14 +74,13 @@
       width: 100%;
       background-color: $color-dark-blue;
       border-radius: 5px;
-      font-size: 1em;
       .expand {
-        padding-top: 7px;
+        position: absolute;
       }
       .show-all-button-text {
-        padding: 0 7px;
+        padding: 5px 10px;
         display: inline-block;
-        margin-bottom: 10px;
+        font-size: 1.2em;
       }
     }
   }

@@ -4,7 +4,7 @@
     <div class="row" (click)="expanded1=!expanded1">
       <div class="col">
          <span>Can I switch my business water supplier?
-           <span *ngIf="expanded1" class="expand">+</span><span *ngIf="!expanded1" class="expand">-</span>
+           <span class="expand">&#8722;</span><span class="expand minus" [class.expanded]="expanded1">&#8722;</span>
          </span>
          <div class="details" [class.expanded]="expanded1">
            <p>In April 2017, water deregulation was introduced in England which allowed over 1.2 million businesses, charities and public sector organisations to switch their water supplier.</p>
@@ -15,7 +15,7 @@
     <div class="row" (click)="expanded2=!expanded2">
       <div class="col">
          <span>How much does it cost to switch water supplier?
-           <span *ngIf="expanded2" class="expand">+</span><span *ngIf="!expanded2" class="expand">-</span>
+           <span class="expand">&#8722;</span><span class="expand minus" [class.expanded]="expanded2">&#8722;</span>
          </span>
         <div class="details" [class.expanded]="expanded2">
            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -25,7 +25,7 @@
     <div class="row" (click)="expanded3=!expanded3">
       <div class="col">
         <span>Which water suppliers are available to switch to?
-          <span *ngIf="expanded3" class="expand">+</span><span *ngIf="!expanded3" class="expand">-</span>
+          <span class="expand">&#8722;</span><span class="expand minus" [class.expanded]="expanded3">&#8722;</span>
         </span>
         <div class="details" [class.expanded]="expanded3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -35,7 +35,7 @@
     <div class="row" (click)="expanded4=!expanded4">
       <div class="col">
         <span>Will I lose water supply if I switch?
-          <span *ngIf="expanded4" class="expand">+</span><span *ngIf="!expanded4" class="expand">-</span>
+          <span class="expand">&#8722;</span><span class="expand minus" [class.expanded]="expanded4">&#8722;</span>
         </span>
         <div class="details" [class.expanded]="expanded4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -45,7 +45,7 @@
     <div class="row" (click)="expanded5=!expanded5">
       <div class="col">
         <span>How long does it take to switch water supplier?
-          <span *ngIf="expanded5" class="expand">+</span><span *ngIf="!expanded5" class="expand">-</span>
+          <span class="expand">&#8722;</span><span class="expand minus" [class.expanded]="expanded5">&#8722;</span>
         </span>
         <div class="details" [class.expanded]="expanded5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

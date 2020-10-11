@@ -40,7 +40,9 @@
       }
       .details {
         .row {
-          display: none;
+          position: absolute;
+          opacity: 0;
+          transition: all 0.5s;
           .col {
             border-right: $color-sky-blue 2px solid;
             border-top: $color-sky-blue 2px solid;
@@ -57,7 +59,8 @@
             }
           }
           &.selected {
-            display: inline-block;
+            opacity: 1;
+            transition: all 0.5s;
           }
         }
       }

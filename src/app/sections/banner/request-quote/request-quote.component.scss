@@ -22,6 +22,27 @@
         border-radius: 2px;
         border-color: transparent;
         padding: 7px;
+        z-index: 111;
+        &.errored {
+          border: 1px solid $color-red;
+        }
+      }
+
+      span.error-message {
+        float: right;
+        text-align: right;
+        margin-top: -35px;
+        z-index: 112;
+        color: $color-red;
+        position: absolute;
+        right: 40px;
+        transition: all 0.5s;
+        display: none;
+        font-size: 0.8em;
+        &.visible {
+          transition: all 0.5s;
+          display: block;
+        }
       }
 
       button {

@@ -7,18 +7,36 @@
         </div>
         <div class="form-control">
           <label for="name"></label>
-          <input id="name" type="text" formControlName="name" placeholder="Name*" />
+          <input id="name" type="text"
+                 title="Name"
+                 [class.errored]="isTouchedAndInvalid(name)"
+                 required minlength="5" formControlName="name" placeholder="Name*" />
+          <span class="error-message" [class.visible]="isTouchedAndInvalid(name)">
+            {{name.errors && name.errors.required ? 'Required' : 'Invalid'}}
+          </span>
         </div>
         <div class="form-control">
           <label for="phone"></label>
-          <input id="phone" type="text" formControlName="phone" placeholder="Phone Number*" />
+          <input id="phone" type="text"
+                 title="Phone Number"
+                 [class.errored]="isTouchedAndInvalid(phone)"
+                 required minlength="10" formControlName="phone" placeholder="Phone Number*" />
+          <span class="error-message" [class.visible]="isTouchedAndInvalid(phone)">
+            {{phone.errors && phone.errors.required ? 'Required' : 'Invalid'}}
+          </span>
         </div>
         <div class="form-control">
           <label for="email"></label>
-          <input id="email" type="text" formControlName="email" placeholder="Email Address*" />
+          <input id="email" type="text"
+                 title="Email"
+                 [class.errored]="isTouchedAndInvalid(email)"
+                 required formControlName="email" placeholder="Email Address*" />
+          <span class="error-message" [class.visible]="isTouchedAndInvalid(email)">
+            {{email.errors && email.errors.required ? 'Required' : 'Invalid'}}
+          </span>
         </div>
         <div class="form-control">
-          <button type="submit" class="btn-danger">SUBMIT</button>
+          <button type="submit" class="btn-danger" [disabled]="!requestFormGroup.valid">SUBMIT</button>
           <p class="disclaimer">By submitting your details, you are agreeing to Love Energy
             Savings <a href="#" title="terms & conditions">terms & conditions</a>. For more information please visit our <a href="#" title="privacy policy">privacy policy</a>.</p>
         </div>

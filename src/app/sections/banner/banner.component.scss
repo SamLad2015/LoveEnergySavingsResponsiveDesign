@@ -42,11 +42,18 @@
 
 @media (max-width: $breakpoint-mobile) {
     .banner {
+      background: #ffffff;
       .row {
         div {
           max-width: 100%;
           flex: 100%;
-          padding: 0 15px;
+          padding: 0;
+        }
+        .contents {
+          background: linear-gradient(#f9f9f9, #c8e2ec);
+          div {
+            padding: 0 15px;
+          }
         }
         margin-bottom: 30px;
       }

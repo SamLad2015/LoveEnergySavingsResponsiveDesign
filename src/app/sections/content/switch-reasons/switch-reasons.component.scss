@@ -46,7 +46,17 @@
 }
 
 @media (max-width: $breakpoint-desktop) {
-  .reason-tile {
-    min-height: 325px;
+  .switch-reasons {
+    .container {
+      .row {
+        .reasons-tiles {
+          div {
+            .reason-tile {
+              min-height: 325px;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -5,6 +5,7 @@
     .row {
       .tab-name {
         .row {
+          transition: all 0.5s;
           border-right: $color-sky-blue 2px solid;
           cursor: pointer;
           &:nth-of-type(2) {
@@ -18,21 +19,26 @@
             line-height: 100px;
             text-align: center;
             background-color: $color-sky-blue;
+            transition: all 0.5s;
             span {
               font-size: 1.2em;
               color: #ffffff;
               font-weight: bolder;
+              transition: all 0.5s;
             }
           }
           &.selected {
+            transition: all 0.5s;
             border-right: #ffffff;
             cursor: default;
             .col {
               width: 101%;
               background-color: #ffffff;
               border-right: #ffffff;
+              transition: all 0.5s;
               span {
                 color: $color-sky-blue;
+                transition: all 0.5s;
               }
             }
           }

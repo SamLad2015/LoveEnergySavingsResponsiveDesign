@@ -1,3 +1,4 @@
+//colors
 $color-green: #9ACD32;
 $color-sky-blue: #05BCE6;
 $color-blue: #00B2FF;
@@ -6,3 +7,10 @@ $color-grey: #F2F2F2;
 $color-dark-grey: #595959;
 $color-light-grey: #666666;
 $color-red: #FF0000;
+
+
+//viewport breakpoints
+$breakpoint-desktop: 1080px;
+$breakpoint-laptop: 980px;
+$breakpoint-tablet: 968px;
+$breakpoint-mobile: 768px;

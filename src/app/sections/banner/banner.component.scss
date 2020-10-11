@@ -39,3 +39,22 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-mobile) {
+    .banner {
+      .row {
+        div {
+          max-width: 100%;
+          flex: 100%;
+          padding: 0 15px;
+        }
+        margin-bottom: 30px;
+      }
+      .banner-logos {
+        div {
+          flex: 50%;
+          max-width: 200px;
+        }
+      }
+    }
+}

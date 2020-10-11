@@ -5,7 +5,6 @@
     margin-top: 30px;
     div {
       padding: 0;
-      border-right: $color-dark-grey 2px solid;
       &:last-of-type {
         border-right: none;
       }
@@ -16,6 +15,7 @@
         color: #ffffff;
         padding: 30px;
         font-weight: bolder;
+        margin-bottom: 0;
       }
     }
   }
@@ -38,7 +38,7 @@
     font-size: 0.9em;
     text-align: center;
     div {
-      border-right: $color-dark-grey 2px solid;
+      border-right: $color-light-grey 2px solid;
       &:last-of-type {
         border-right: none;
       }
@@ -48,6 +48,9 @@
     }
     &:first-of-type {
       background-color: #ffffff;
+      div {
+        border: none;
+      }
     }
     &:nth-of-type(2) {
       .image-container {

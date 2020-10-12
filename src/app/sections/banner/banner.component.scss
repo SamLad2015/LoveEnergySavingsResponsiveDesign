@@ -52,6 +52,9 @@
         }
         .contents {
           background: linear-gradient(#f9f9f9, #c8e2ec);
+          .heading {
+            font-size: 1.2em !important;
+          }
           div {
             padding: 0 15px;
           }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-nav-menu',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-menu.component.scss']
 })
 export class NavMenuComponent implements OnInit {
-  navMenuList = ['Business Energy', 'Home Energy', 'Other Services', 'Content Hub', 'About Us'];
+  @Input()
+  navMenuList = [];
   constructor() { }
 
   ngOnInit(): void {

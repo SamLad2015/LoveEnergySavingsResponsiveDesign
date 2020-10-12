@@ -16,9 +16,15 @@
 }
 @media (max-width: $breakpoint-mobile) {
   .header {
+    padding: 7px 0;
     .menu-icon {
       height: 4rem;
       margin-right: 10px;
+    }
+    .menu-logo-container {
+      div {
+        padding-left: 5px;
+      }
     }
     .phone-icon-container {
       .phone-icon {
@@ -29,7 +35,34 @@
     }
     .lse-logo {
       padding: 10px 10px 0 0;
-      height: 4rem;
+      height: 3.5rem;
+    }
+  }
+  .caption {
+    font-size: 1.2em;
+  }
+  .mobile-menu {
+    height: 100vh;
+    transition: height 0.5s ease;
+    ul {
+      padding: 20px;
+      width: 100%;
+      li {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px $color-dark-grey solid;
+        span, a {
+          color: #000000;
+          width: 100%;
+        }
+        &.caption {
+          padding-bottom: 50px;
+          button {
+            font-size: 2.5em;
+            margin-top: -10px;
+          }
+        }
+      }
     }
   }
 }

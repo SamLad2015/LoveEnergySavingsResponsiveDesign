@@ -1,20 +1,20 @@
-<div class="header">
+<div class="header" *ngIf="!isMenuVisible">
   <div class="container">
     <div class="row desktop-view">
       <div class="col-3">
         <img class="lse-logo" src="../../../assets/love-energy-savings-logo.png" alt="Love Energy Savings Logo"/>
       </div>
       <div class="col-6">
-        <app-nav-menu></app-nav-menu>
+        <app-nav-menu [navMenuList]="navMenuList"></app-nav-menu>
       </div>
       <div class="col-3">
         <span class="header-telephone">0800 9888 375</span>
       </div>
     </div>
     <div class="row mobile-view">
-      <div class="col-6">
+      <div class="col-6 menu-logo-container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4" (click)="isMenuVisible=true">
             <img class="menu-icon" src="../../../assets/menu.png" alt="Love Energy Savings Menu Logo"/>
           </div>
           <div class="col-8">
@@ -28,4 +28,14 @@
     </div>
   </div>
 </div>
-
+<div class="mobile-menu mobile-view" *ngIf="isMenuVisible">
+  <ul>
+    <li class="caption">
+      <span>Menu</span>
+      <button class="close" (click)="isMenuVisible=false">&times;</button>
+    </li>
+    <li *ngFor="let i of navMenuList">
+      <a href="#">{{i}}</a>
+    </li>
+  </ul>
+</div>

@@ -13,6 +13,25 @@ ul {
   line-height: 1.2em;
 }
 
+.show-all-button-row {
+  padding: 0;
+  width: 100%;
+  button.show-all-button {
+    padding: 0;
+    width: 100%;
+    background-color: $color-dark-blue;
+    border-radius: 5px;
+    .expand {
+      position: absolute;
+    }
+    .show-all-button-text {
+      padding: 5px 10px;
+      display: inline-block;
+      font-size: 1.2em;
+    }
+  }
+}
+
 @media (max-width: $breakpoint-mobile) {
   .other-reasons-tabs {
     .container {
@@ -53,6 +72,13 @@ ul {
           }
         }
       }
+    }
+  }
+  .show-all-button-row {
+    margin-top: 20px;
+    button.show-all-button {
+      padding:10px;
+      font-weight: bolder;
     }
   }
 }

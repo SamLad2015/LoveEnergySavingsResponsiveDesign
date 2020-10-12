@@ -31,7 +31,7 @@
       font-size: 0.875em;
       transition: all $accordion-transition-time;
       &.expanded {
-        height: 15em;
+        height: 10em;
         transition: all $accordion-transition-time;
         opacity: 1;
         display: block;
@@ -51,12 +51,6 @@
       border-bottom: $color-dark-grey 1px solid;
     }
   }
-}
-
-@media (max-width: $breakpoint-mobile) {
-  .details {
-    overflow: hidden;
-  }
   span.row {
     padding: 0;
     margin: 0 !important;
@@ -70,6 +64,15 @@
       &.expand {
         margin-top: -5px;
       }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .details {
+    overflow: hidden;
+    &.expanded {
+      height: 15em;
     }
   }
 }

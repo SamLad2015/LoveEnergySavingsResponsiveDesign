@@ -12,3 +12,47 @@ ul {
   font-weight: normal;
   line-height: 1.2em;
 }
+
+@media (max-width: $breakpoint-mobile) {
+  .other-reasons-tabs {
+    .container {
+      .mobile-view {
+        .row {
+          .col {
+            background-color: $color-blue;
+            color: #ffffff;
+            padding:10px;
+            border: $color-blue 1px solid !important;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: all $accordion-transition-time ease;
+            span {
+              margin-bottom: 0 !important;
+              margin-top: 10px;
+              &.expand {
+                color: #ffffff !important;
+                transition: color $accordion-transition-time ease;
+              }
+            }
+            &.expanded-row {
+              background-color: #ffffff;
+              color: #000000;
+              transition: background-color $accordion-transition-time ease;
+              span.expand {
+                color: $color-blue !important;
+                transition: color $accordion-transition-time ease;
+              }
+              .details {
+                height: 0;
+                &.expanded {
+                  height: 300px;
+                  padding: 10px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

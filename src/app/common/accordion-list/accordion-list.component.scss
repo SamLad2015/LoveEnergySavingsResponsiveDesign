@@ -19,19 +19,21 @@
       .minus {
         margin-right:-22.5px;
         transform: rotate(90deg);
+        transition: all $accordion-transition-time ease;
       }
       .expanded {
         transform: rotate(0deg);
-        transition: all 0.5s ease;
+        transition: all $accordion-transition-time ease;
       }
     }
     div.details {
       height: 0;
       opacity: 0;
       font-size: 0.875em;
+      transition: all $accordion-transition-time;
       &.expanded {
-        height: auto;
-        transition: all 0.5s;
+        height: 200px;
+        transition: all $accordion-transition-time;
         opacity: 1;
         p {
           margin-bottom: 0;

@@ -1,5 +1,5 @@
 <div class="row" *ngFor="let i of items" (click)="i.expanded=!i.expanded">
-  <div class="col">
+  <div class="col" [class.expanded-row]="i.expanded">
          <span>{{i.title}}
            <span class="expand">&#8722;</span><span class="expand minus" [class.expanded]="i.expanded">&#8722;</span>
          </span>

@@ -1,5 +1,8 @@
 @import "../../../../variables";
 .other-reasons-tabs {
+  .desktop-view {
+    display: flex !important;
+  }
   margin-bottom: 60px;
   .container {
     .row {
@@ -75,16 +78,11 @@
   }
 }
 
-.desktop-view {
-  display: flex;
-}
-
-.mobile-view {
-  display: none;
-}
-
 @media (max-width: $breakpoint-desktop) {
   .other-reasons-tabs {
+    .desktop-view {
+      display: none !important;
+    }
     .container {
       .row {
         .details {
@@ -102,11 +100,4 @@
   }
 }
 
-@media (max-width: $breakpoint-mobile) {
-  .desktop-view {
-    display: none;
-  }
-  .mobile-view {
-    display: block;
-  }
-}
+

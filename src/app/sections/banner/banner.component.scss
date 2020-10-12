@@ -34,6 +34,7 @@
         height: 80px;
       }
       .trustpilot-logo {
+        height: 80px;
         text-align: right;
       }
     }
@@ -61,6 +62,13 @@
         div {
           flex: 50%;
           max-width: 200px;
+          .love-water-savings-logo {
+            height: 3.5rem !important;
+          }
+          .trustpilot-logo {
+            height: 2rem !important;
+            text-align: right;
+          }
         }
       }
     }

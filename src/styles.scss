@@ -32,10 +32,27 @@ ul {
   }
 }
 
+.desktop-view {
+  display: flex !important;
+}
+.mobile-view {
+  display: none !important;
+}
+
 @media (max-width: $breakpoint-mobile) {
+  * {
+    overflow-x: hidden;
+  }
+  .desktop-view {
+    display: none !important;
+  }
+  .mobile-view {
+    display: flex !important;
+  }
   .other-reasons-tabs {
     .container {
       .mobile-view {
+        display: block !important;
         .row {
           .col {
             background-color: $color-blue;
@@ -47,7 +64,6 @@ ul {
             transition: all $accordion-transition-time ease;
             span {
               margin-bottom: 0 !important;
-              margin-top: 10px;
               &.expand {
                 color: #ffffff !important;
                 transition: color $accordion-transition-time ease;
@@ -64,7 +80,7 @@ ul {
               .details {
                 height: 0;
                 &.expanded {
-                  height: 300px;
+                  height: 30em;
                   padding: 10px 0 0 0;
                 }
               }
@@ -74,7 +90,13 @@ ul {
       }
     }
   }
+  .expand {
+    margin-top: -15px;
+  }
   .show-all-button-row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 15px;
     margin-top: 20px;
     button.show-all-button {
       padding:10px;
@@ -82,3 +104,4 @@ ul {
     }
   }
 }
+

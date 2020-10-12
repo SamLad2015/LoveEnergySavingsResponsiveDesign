@@ -58,11 +58,11 @@
             border-bottom-right-radius: 3px;
             height: calc(21em + 4px);
             padding: 40px;
-            div {
+            p {
+              margin-bottom: 10px;
+            }
+            p, ul li {
               font-size: 0.9em;
-              p {
-                margin-bottom: 10px;
-              }
             }
           }
           &.selected {
@@ -73,6 +73,14 @@
       }
     }
   }
+}
+
+.desktop-view {
+  display: flex;
+}
+
+.mobile-view {
+  display: none;
 }
 
 @media (max-width: $breakpoint-desktop) {
@@ -88,5 +96,17 @@
         }
       }
     }
+  }
+  ul {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
   }
 }

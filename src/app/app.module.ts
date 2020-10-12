@@ -13,6 +13,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { SwitchReasonsComponent } from './sections/content/switch-reasons/switch-reasons.component';
 import { WaterSuppliersComponent } from './sections/content/water-suppliers/water-suppliers.component';
 import { OtherReasonsTabsComponent } from './sections/content/other-reasons-tabs/other-reasons-tabs.component';
+import { AccordionListComponent} from './common/accordion-list/accordion-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { OtherReasonsTabsComponent } from './sections/content/other-reasons-tabs
     RequestQuoteComponent,
     SwitchReasonsComponent,
     WaterSuppliersComponent,
-    OtherReasonsTabsComponent
+    OtherReasonsTabsComponent,
+    AccordionListComponent
   ],
   imports: [
     BrowserModule,

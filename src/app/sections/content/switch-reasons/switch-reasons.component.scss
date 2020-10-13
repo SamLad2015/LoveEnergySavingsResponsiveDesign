@@ -47,15 +47,18 @@
 
 @media (max-width: $breakpoint-desktop) {
   .switch-reasons {
-    .container {
-      .row {
-        .reasons-tiles {
-          div {
-            .reason-tile {
-              min-height: 325px;
-            }
-          }
-        }
+    padding: 0;
+    .heading {
+      font-size: 1.2em;
+    }
+    .reason-tile {
+      padding: 0;
+      margin: 0 50px;
+    }
+    div.details {
+      margin-top: 30px;
+      span {
+        font-size: 1.2em;
       }
     }
   }

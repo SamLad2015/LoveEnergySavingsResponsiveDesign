@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class NavMenuComponent implements OnInit {
   @Input()
-  navMenuList = [];
+  navMenuList: string [] = [];
   constructor() { }
 
   ngOnInit(): void {

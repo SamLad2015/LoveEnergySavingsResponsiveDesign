@@ -7,13 +7,14 @@ import { BannerComponent } from './sections/banner/banner.component';
 import { ContentComponent } from './sections/content/content.component';
 import { FooterComponent } from './sections/footer/footer.component';
 import { NavMenuComponent } from './sections/header/nav-menu/nav-menu.component';
-import {HeaderComponent} from './sections/header/header.component';
+import { HeaderComponent } from './sections/header/header.component';
 import { RequestQuoteComponent } from './sections/banner/request-quote/request-quote.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { SwitchReasonsComponent } from './sections/content/switch-reasons/switch-reasons.component';
 import { WaterSuppliersComponent } from './sections/content/water-suppliers/water-suppliers.component';
 import { OtherReasonsTabsComponent } from './sections/content/other-reasons-tabs/other-reasons-tabs.component';
-import { AccordionListComponent} from './common/accordion-list/accordion-list.component';
+import { AccordionListComponent } from './common/accordion-list/accordion-list.component';
+import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -33,9 +34,10 @@ import { AccordionListComponent} from './common/accordion-list/accordion-list.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbCarouselModule
   ],
-  providers: [],
+  providers: [NgbCarouselConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

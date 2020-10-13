@@ -3,6 +3,9 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+a:focus {
+  outline: none;
+}
 ul {
   padding: 0;
   margin: 0 0 0 10px;
@@ -38,6 +41,24 @@ ul {
 .mobile-view {
   display: none !important;
 }
+
+.carousel {
+  .carousel-indicators {
+    display: none !important;
+  }
+  .carousel-control-prev-icon {
+    background-image: url('assets/arrow-left.png')
+  }
+  .carousel-control-next-icon {
+    background-image: url('assets/arrow-right.png')
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
 
 @media (max-width: $breakpoint-mobile) {
   * {

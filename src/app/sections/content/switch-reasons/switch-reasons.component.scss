@@ -47,13 +47,25 @@
 
 @media (max-width: $breakpoint-desktop) {
   .switch-reasons {
+    &:focus {
+      outline: none;
+    }
     padding: 0;
     .heading {
       font-size: 1.2em;
     }
-    .reason-tile {
-      padding: 0;
-      margin: 0 50px;
+    .reasons-tiles {
+      &:focus {
+        outline: none;
+      }
+      .reason-tile {
+        &:focus {
+          outline: none;
+        }
+
+        padding: 0;
+        margin: 0 50px;
+      }
     }
     div.details {
       margin-top: 30px;

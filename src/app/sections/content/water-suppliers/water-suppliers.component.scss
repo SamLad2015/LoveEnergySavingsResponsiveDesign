@@ -78,7 +78,7 @@
   }
 }
 
-@media (max-width: $breakpoint-mobile) {
+@media all and (max-width: $breakpoint-mobile) {
   .water-suppliers {
     margin-top: 30px;
     .container {

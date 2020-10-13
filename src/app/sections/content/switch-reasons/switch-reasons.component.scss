@@ -1,6 +1,6 @@
 @import "../../../../variables";
 .switch-reasons {
-  padding-top: 60px;
+  margin-top: 60px;
   .heading {
     font-size: 1.3em;
     color: $color-blue;
@@ -38,6 +38,26 @@
               padding: 0;
               color: #333333;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-laptop) {
+  .switch-reasons {
+    margin-top: 30px;
+    .container {
+      .reasons-tiles {
+        div.col-3 {
+          flex: 50%;
+          max-width: 50%;
+          margin-bottom: 10px;
+
+          .reason-tile {
+            flex: 100%;
+            max-width: 100%;
           }
         }
       }

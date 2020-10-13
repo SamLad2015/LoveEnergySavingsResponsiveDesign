@@ -41,6 +41,24 @@
   }
 }
 
+@media all and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-laptop) {
+  .banner {
+    .banner-logos {
+      div {
+        flex: 50%;
+        max-width: 200px;
+        .love-water-savings-logo {
+          height: 3.5rem !important;
+        }
+        .trustpilot-logo {
+          height: 2rem !important;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: $breakpoint-mobile) {
     .banner {
       background: #ffffff;
